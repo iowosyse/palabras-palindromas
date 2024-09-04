@@ -32,15 +32,13 @@ int main(void)
     aux -= 1;
 
     //revisa si la cadena es palindroma
-    for (int i = 0; i < cadenaLength / 2; ++i) {
+    for (int i = 0; i < cadenaLength / 2; i++, aux--) {
         if (sinEspacios[i] == sinEspacios[aux])
             sonIguales = 1;
         else {
             sonIguales = 0;
             break;
         }
-
-        aux --;
     }
 
     if (sonIguales == 1)
